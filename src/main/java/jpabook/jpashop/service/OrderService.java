@@ -31,7 +31,7 @@ public class OrderService {
     public Long order(Long memberId, Long itemId, int count) {
 
         // 엔티티 조회
-        Member member = memberRepository.find(memberId);
+        Member member = memberRepository.findOne(memberId);
         Item item = itemRepository.findOne(itemId);
 
         // 배송정보 생성
@@ -63,7 +63,7 @@ public class OrderService {
      * 검색
      */
     public List<Order> findOrders(OrderSearch orderSearch) {
-        return orderRepository.findAll(orderSearch);
+        return orderRepository.findAllByString(orderSearch);
     }
 
 }
