@@ -12,3 +12,9 @@ http://localhost:8080/api/v3.1/orders
 
 ### 주문 목록 조회 V4
 http://localhost:8080/api/v4/orders
+
+### 주문 목록 조회 V5
+http://localhost:8080/api/v5/orders
+
+### 주문 목록 조회 V6
+http://localhost:8080/api/v6/orders
